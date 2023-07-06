@@ -7,9 +7,9 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-onSubmit(_t5: NgForm) {
-throw new Error('Method not implemented.');
-}
+  onSubmit(contactForm: any) {
+    console.log(contactForm.value);
+  }
 
   title = 'Template driven forms';
  
